@@ -66,17 +66,14 @@
       <aside class="app-sidebar" aria-label="Demo navigation">
         <div class="app-sidebar-top"><a class="brand" href="#" data-close-demo><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>ServeFlow</a><button class="icon-button app-close" type="button" data-close-demo aria-label="Return to marketing site">×</button></div>
         <p class="demo-pill">Demo data only</p>
-        <nav class="app-nav" aria-label="Workspace"><a class="active" href="#dashboard" aria-current="page"><span>▦</span> Overview</a><a href="#pos"><span>⌁</span> Food POS <b>Soon</b></a><a href="#inventory"><span>▤</span> Inventory <b>Soon</b></a><a href="#reports"><span>◔</span> Reports <b>Soon</b></a></nav>
+        <nav class="app-nav" aria-label="Workspace"><a class="active" href="#dashboard" aria-current="page"><span>▦</span> Overview</a><a href="#pos"><span>⌁</span> Food POS</a><a href="#inventory"><span>▤</span> Inventory <b>Soon</b></a><a href="#reports"><span>◔</span> Reports <b>Soon</b></a></nav>
         <div class="sidebar-bottom"><button class="sidebar-action" type="button" data-theme-toggle><span>◐</span> Switch theme</button><button class="sidebar-action" type="button" data-reset-demo><span>↺</span> Reset sample data</button></div>
       </aside>
-      <main class="app-main"><header class="app-header"><div><p class="kicker">INTERACTIVE PREVIEW</p><h1>Operations overview</h1></div><div class="app-header-actions"><span class="demo-pill">Local demo</span><button class="button button-secondary" type="button" data-reset-demo>Reset data</button></div></header>
-        <div class="demo-notice" role="status"><span aria-hidden="true">ⓘ</span><p><strong>You’re viewing simulated data.</strong> Changes stay in this browser. Payments, accounts, and backend services are not connected.</p></div>
-        <section class="summary-grid" aria-label="Sample dashboard metrics"><article class="summary-card"><p>Sample sales today</p><strong data-summary-sales>$4,280.50</strong><span>Illustrative metric</span></article><article class="summary-card"><p>Open sample orders</p><strong data-summary-orders>3</strong><span>Preparing, new, and ready</span></article><article class="summary-card"><p>Low-stock items</p><strong data-summary-low-stock>2</strong><span>Based on demo thresholds</span></article></section>
-        <section class="app-foundation-card"><div><p class="eyebrow"><span></span> PHASE 1 FOUNDATION</p><h2>Your demo workspace is ready.</h2><p>The next phases add a simulated food POS, retail inventory workspace, and interactive reporting. This overview verifies the app shell, theme preference, and browser-only sample data.</p></div><div class="foundation-actions"><button class="button button-primary" type="button" data-show-message="Food POS is planned for Phase 3.">Preview food POS <span>→</span></button><button class="button button-secondary" type="button" data-show-message="Inventory tools are planned for Phase 4.">Preview inventory</button></div></section>
-        <section class="empty-state"><span class="empty-icon" aria-hidden="true">✦</span><h2>More interactive tools are on their way</h2><p>Use this foundation to switch themes, reset sample data, and return to the marketing page.</p><button class="button button-secondary" type="button" data-close-demo>Return to site</button></section>
+      <main class="app-main"><p class="demo-loading">Loading the demo workspace…</p>
       </main>
     </section>
     <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+    <div id="sr-announcer" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
     <script src="data.js"></script>
     <script src="app.js"></script>
     <script src="script.js"></script>
