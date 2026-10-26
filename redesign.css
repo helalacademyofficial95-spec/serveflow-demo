@@ -4,3 +4,25 @@ body{background:var(--cream);color:var(--ink)}.container{width:min(1200px,calc(1
 @media(max-width:900px){.hero-layout{grid-template-columns:1fr;gap:35px}.hero-copy{max-width:700px}.hero-visual{width:min(650px,100%);margin:0 auto;min-height:430px}.solutions-heading{gap:20px}.workflow-layout{gap:35px}}
 @media(max-width:700px){.container{width:calc(100% - 32px)}.site-header{padding:16px 0}.hero{padding:112px 0 54px}.hero h1{font-size:clamp(43px,12vw,60px);letter-spacing:-2.8px}.hero-text{font-size:16px;margin:19px 0}.hero-actions{align-items:stretch;gap:12px}.hero-actions .button{width:100%}.hero-visual{min-height:370px}.dashboard-card{padding:15px;top:18px}.metric-row{gap:7px}.metric-row article{padding:9px;gap:7px}.metric-row strong{font-size:13px}.dash-main{gap:8px}.sales-card{width:36%;padding-left:8px}.order{gap:4px}.tag{font-size:7px}.status-card{right:-3px;top:0}.stock-card{left:-3px;bottom:0}.trust-items{justify-content:center;gap:12px 20px}.features,.solutions{padding:65px 0}.feature-grid,.solution-grid{grid-template-columns:1fr}.feature-card{min-height:0}.workflow-layout{padding-top:60px;padding-bottom:60px}.solutions-heading{display:grid}.solution-card{padding:24px}.resource-section{padding-bottom:60px}.resource-card{padding:25px}.cta{padding-bottom:55px}.cta-box{padding:28px 22px;gap:22px}.footer-top,.footer-bottom{align-items:flex-start}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Specificity patch: make redesign rules win over original compound selectors. */
+#marketing-site .site-header{padding:22px 0;background:rgba(247,248,244,.92)}
+#marketing-site .hero.section-grid{padding:150px 0 90px;background:radial-gradient(ellipse at 82% 23%,#dff0c5 0,transparent 30%),linear-gradient(180deg,#f8f9f3,#f2f5ee)}
+#marketing-site .hero-layout{grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:58px}
+#marketing-site .hero h1{font-size:clamp(48px,5.5vw,76px);letter-spacing:-3.8px;line-height:1.02}
+#marketing-site .hero-text{font-size:17px;color:#52665f;max-width:460px}
+#marketing-site .dashboard-card{top:24px;border-radius:20px;padding:25px;box-shadow:0 28px 75px #153a3022;border-color:#e1eae3}
+#marketing-site .trust-strip{padding:25px 0;background:#fff}
+#marketing-site .features.section-grid{padding:100px 0}
+#marketing-site .feature-card{border-radius:18px;border-color:#e1e9e2;padding:28px;box-shadow:0 8px 24px #153a3008}
+#marketing-site .workflow{background:#093f38}
+#marketing-site .workflow-layout{gap:70px;padding-top:82px;padding-bottom:82px}
+#marketing-site .solutions.section-grid{padding:100px 0}
+#marketing-site .solution-card{border-radius:20px;padding:32px;border:1px solid #e0e8df}
+#marketing-site .resource-section{padding:10px 0 90px}
+#marketing-site .resource-card{border-radius:22px;padding:42px;background:#edf3e9}
+#marketing-site .cta{padding:0 0 85px;background:#f7f8f4}
+#marketing-site .cta-box{border-radius:22px;background:linear-gradient(120deg,#0a453d,#082f2a);padding:48px;box-shadow:0 20px 50px #073d361a}
+#marketing-site footer{background:#fff;border-top:1px solid #dce7e1}
+@media(max-width:900px){#marketing-site .hero-layout{grid-template-columns:1fr;gap:35px}#marketing-site .workflow-layout{gap:35px}}
+@media(max-width:700px){#marketing-site .hero.section-grid{padding:112px 0 54px}#marketing-site .hero h1{font-size:clamp(43px,12vw,60px);letter-spacing:-2.8px}#marketing-site .hero-visual{min-height:370px}#marketing-site .dashboard-card{padding:15px;top:18px}#marketing-site .features.section-grid,#marketing-site .solutions.section-grid{padding:65px 0}#marketing-site .feature-grid,#marketing-site .solution-grid{grid-template-columns:1fr}#marketing-site .workflow-layout{padding-top:60px;padding-bottom:60px}#marketing-site .resource-section{padding-bottom:60px}#marketing-site .resource-card{padding:25px}#marketing-site .cta{padding-bottom:55px}#marketing-site .cta-box{padding:28px 22px}}
