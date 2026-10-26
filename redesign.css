@@ -26,3 +26,74 @@ body{background:var(--cream);color:var(--ink)}.container{width:min(1200px,calc(1
 #marketing-site footer{background:#fff;border-top:1px solid #dce7e1}
 @media(max-width:900px){#marketing-site .hero-layout{grid-template-columns:1fr;gap:35px}#marketing-site .workflow-layout{gap:35px}}
 @media(max-width:700px){#marketing-site .hero.section-grid{padding:112px 0 54px}#marketing-site .hero h1{font-size:clamp(43px,12vw,60px);letter-spacing:-2.8px}#marketing-site .hero-visual{min-height:370px}#marketing-site .dashboard-card{padding:15px;top:18px}#marketing-site .features.section-grid,#marketing-site .solutions.section-grid{padding:65px 0}#marketing-site .feature-grid,#marketing-site .solution-grid{grid-template-columns:1fr}#marketing-site .workflow-layout{padding-top:60px;padding-bottom:60px}#marketing-site .resource-section{padding-bottom:60px}#marketing-site .resource-card{padding:25px}#marketing-site .cta{padding-bottom:55px}#marketing-site .cta-box{padding:28px 22px}}
+
+
+/* Food POS polish — presentation only; app.js and data.js remain unchanged. */
+#demo-app .pos-view{color:#172f2c}
+#demo-app .pos-view .app-header{align-items:center;gap:16px;margin-bottom:18px}
+#demo-app .pos-view .app-header h1{font-size:clamp(28px,3vw,38px);letter-spacing:-1.2px;line-height:1.12}
+#demo-app .pos-view .app-header .kicker{letter-spacing:1.6px;font-weight:800;color:#0b6658}
+#demo-app .pos-view .demo-pill{border:1px solid #d6e7df;background:#edf7f1;color:#276b57;border-radius:999px;padding:8px 12px;font-size:12px;font-weight:700}
+#demo-app .pos-view .demo-notice{border:1px solid #e4e9d5;border-radius:14px;background:#f5f8e9;padding:13px 16px;margin:0 0 22px;color:#52645b}
+#demo-app .pos-view .demo-notice p{margin:0;font-size:13px;line-height:1.55}
+#demo-app .pos-view .dashboard-panel{border:1px solid #dfe9e3;border-radius:18px;background:#fff;box-shadow:0 8px 26px rgba(22,55,43,.045)}
+#demo-app .pos-view .pos-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(290px,.85fr);gap:20px;align-items:start}
+#demo-app .pos-view .pos-catalog,#demo-app .pos-view .pos-cart{padding:22px;min-width:0}
+#demo-app .pos-view .panel-heading{gap:14px;align-items:center;margin-bottom:16px}
+#demo-app .pos-view .panel-kicker{color:#71847a;font-size:10px;letter-spacing:1.5px;font-weight:800}
+#demo-app .pos-view .panel-heading h2{font-size:22px;letter-spacing:-.65px;line-height:1.25;margin:2px 0 0}
+#demo-app .pos-view .pos-toolbar{display:grid;gap:15px;margin:16px 0}
+#demo-app .pos-view .search-field label{display:block;font-size:12px;font-weight:700;color:#4e6258;margin-bottom:7px}
+#demo-app .pos-view .search-field input{width:100%;min-height:44px;border:1px solid #dce7e1;border-radius:10px;background:#fbfcfa;padding:10px 13px;color:#172f2c;outline-offset:3px}
+#demo-app .pos-view .search-field input:focus{border-color:#0b6658;box-shadow:0 0 0 3px rgba(11,102,88,.1)}
+#demo-app .pos-view .category-filters{display:flex;gap:8px;flex-wrap:wrap}
+#demo-app .pos-view .chip{border:1px solid #dce7e1;background:#fff;color:#4e6258;border-radius:999px;padding:8px 13px;font-size:12px;font-weight:700;transition:background .15s,border-color .15s,color .15s}
+#demo-app .pos-view .chip[aria-pressed=true]{background:#0b5148;border-color:#0b5148;color:#fff}
+#demo-app .pos-view .chip:hover:not([aria-pressed=true]){background:#f0f6f1;border-color:#b9d2c6}
+#demo-app .pos-view .menu-count{font-size:12px;color:#75857d;margin:0 0 10px}
+#demo-app .pos-view .menu-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;list-style:none;padding:0;margin:0}
+#demo-app .pos-view .menu-grid>li{min-width:0}
+#demo-app .pos-view .menu-item{display:flex;flex-direction:column;align-items:flex-start;gap:7px;text-align:left;width:100%;height:100%;min-height:174px;border:1px solid #e1eae4;border-radius:14px;padding:14px;background:linear-gradient(160deg,#fff 65%,#f7faf5);color:#172f2c;transition:transform .15s,border-color .15s,box-shadow .15s}
+#demo-app .pos-view .menu-item:hover{transform:translateY(-2px);border-color:#a9cfc0;box-shadow:0 9px 22px rgba(20,65,48,.08)}
+#demo-app .pos-view .menu-item:focus-visible,#demo-app .pos-view button:focus-visible{outline:3px solid #ff725e;outline-offset:3px}
+#demo-app .pos-view .menu-emoji{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;background:#eef6eb;font-size:21px;margin-bottom:2px}
+#demo-app .pos-view .menu-name{font-size:13px;line-height:1.35;font-weight:800}
+#demo-app .pos-view .menu-detail{font-size:11px;line-height:1.45;color:#78877f}
+#demo-app .pos-view .menu-footer{display:flex;align-items:center;justify-content:space-between;gap:6px;width:100%;margin-top:auto;padding-top:8px}
+#demo-app .pos-view .menu-price{font-size:14px;font-weight:800;color:#0b5148}
+#demo-app .pos-view .menu-add{font-size:11px;font-weight:800;color:#d95745;background:#fff0ec;border-radius:7px;padding:5px 7px}
+#demo-app .pos-view .menu-empty{grid-column:1/-1;display:grid;gap:8px;padding:28px;border:1px dashed #cbdcd2;border-radius:14px;color:#62746b}
+#demo-app .pos-view .menu-empty strong{color:#172f2c}
+#demo-app .pos-view .pos-cart{position:sticky;top:18px}
+#demo-app .pos-view .pos-cart .cart-line{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px 10px;padding:14px 0;border-bottom:1px solid #edf1ed}
+#demo-app .pos-view .cart-line-name{display:block;font-size:13px;font-weight:800}
+#demo-app .pos-view .cart-line small{display:block;font-size:11px;color:#78877f;margin-top:3px}
+#demo-app .pos-view .cart-line-total{font-size:13px;white-space:nowrap}
+#demo-app .pos-view .qty-controls{display:flex;align-items:center;gap:10px;width:max-content;border:1px solid #dfe9e3;border-radius:9px;padding:3px}
+#demo-app .pos-view .qty-controls button{display:grid;place-items:center;width:28px;height:28px;border:0;border-radius:6px;background:#f0f6f1;color:#0b5148;font-weight:800}
+#demo-app .pos-view .qty-controls button:disabled{opacity:.38;cursor:not-allowed}
+#demo-app .pos-view .qty-value{min-width:12px;text-align:center;font-size:12px;font-weight:800}
+#demo-app .pos-view .remove-button{justify-self:end;align-self:center;border:0;background:transparent;color:#b94b3e;font-size:11px;font-weight:700}
+#demo-app .pos-view .cart-empty{border:1px dashed #d8e5dc;border-radius:12px;background:#f9fbf8;padding:22px 14px;text-align:center;color:#74847b;font-size:12px}
+#demo-app .pos-view .cart-empty strong{display:block;color:#344d42;font-size:14px;margin-bottom:4px}
+#demo-app .pos-view .cart-summary{border-top:1px solid #e6eee8;margin-top:16px;padding-top:13px}
+#demo-app .pos-view .cart-summary>div,#demo-app .pos-view .totals-row{display:flex;justify-content:space-between;gap:12px;padding:5px 0;font-size:12px;color:#65766d}
+#demo-app .pos-view .cart-summary .grand-total,#demo-app .pos-view .totals-row.total{font-size:17px;font-weight:800;color:#172f2c;padding-top:11px;margin-top:6px;border-top:1px solid #e6eee8}
+#demo-app .pos-view .pos-cart .button{width:100%;margin-top:10px;border-radius:10px;min-height:45px}
+#demo-app .pos-view .pos-cart .button-primary{background:#0b5148;color:#fff;box-shadow:0 7px 17px rgba(11,81,72,.16)}
+#demo-app .pos-view .pos-cart .button-secondary{background:#fff;border:1px solid #dce7e1;color:#40574c}
+#demo-app .pos-view .pos-orders-panel{margin-top:20px;padding:22px}
+#demo-app .pos-view .pos-orders-panel .panel-heading{margin-bottom:14px}
+#demo-app .pos-view .order-filters{display:flex;gap:7px;flex-wrap:wrap}
+#demo-app .pos-view .order-filters button{border:1px solid #dce7e1;background:#fff;border-radius:999px;padding:7px 11px;font-size:11px;font-weight:700;color:#53675d}
+#demo-app .pos-view .order-filters button[aria-pressed=true]{background:#e8f4ed;border-color:#bdd9ca;color:#155c4a}
+#demo-app .pos-view .orders-table-wrap{overflow-x:auto;border:1px solid #e6eee8;border-radius:12px}
+#demo-app .pos-view .orders-table-wrap table{width:100%;border-collapse:collapse;min-width:580px}
+#demo-app .pos-view .orders-table-wrap th{background:#f6f9f5;text-align:left;color:#738379;font-size:10px;letter-spacing:.7px;text-transform:uppercase;padding:12px}
+#demo-app .pos-view .orders-table-wrap td{padding:13px 12px;border-top:1px solid #edf1ed;font-size:12px;vertical-align:middle}
+#demo-app .pos-view .orders-table-wrap td small{display:block;color:#78877f;font-size:10px;margin-top:3px}
+#demo-app .pos-view .badge{border-radius:999px;padding:5px 9px;font-size:10px;font-weight:800}
+#demo-app .pos-view .cart-bar{border:1px solid #dce7e1;border-radius:14px;background:#fff;box-shadow:0 8px 28px rgba(22,55,43,.12);padding:12px;gap:12px}
+@media(max-width:1050px){#demo-app .pos-view .pos-layout{grid-template-columns:minmax(0,1.3fr) minmax(270px,.8fr)}#demo-app .pos-view .menu-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){#demo-app .pos-view .pos-layout{grid-template-columns:1fr}#demo-app .pos-view .pos-cart{position:static;order:2}#demo-app .pos-view .menu-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#demo-app .pos-view .pos-catalog,#demo-app .pos-view .pos-cart,#demo-app .pos-view .pos-orders-panel{padding:16px}#demo-app .pos-view .app-header{align-items:flex-start}#demo-app .pos-view .app-header-actions{flex-wrap:wrap;justify-content:flex-end}#demo-app .pos-view .pos-orders-panel{margin-top:14px}}
+@media(max-width:420px){#demo-app .pos-view .menu-grid{grid-template-columns:1fr 1fr;gap:8px}#demo-app .pos-view .menu-item{padding:11px;min-height:165px}#demo-app .pos-view .menu-name{font-size:12px}#demo-app .pos-view .menu-detail{font-size:10px}#demo-app .pos-view .menu-add{font-size:10px;padding:4px 5px}}
